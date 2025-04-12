@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EPIC PASS</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding-left: 5vw;
+      font-size: 3rem;
+    }
+
+    .static-text {
+      display: inline;
+    }
+
+    .fade-text {
+      display: inline-block;
+      opacity: 1;
+      animation: fadeSwap 4s ease-in-out forwards;
+    }
+
+    @keyframes fadeSwap {
+      0%   { opacity: 1; content: "S1"; }
+      40%  { opacity: 0; }
+      60%  { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span class="static-text">EPIC PASS </span>
+    <span class="fade-text" id="dynamic">S1</span>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("dynamic").textContent = "S2";
+    }, 2000); // Change S1 to S2 halfway through fade
+
+    setTimeout(() => {
+      window.location.href = "epic.html";
+    }, 4500); // Redirect after fade and switch
+  </script>
+</body>
+</html>

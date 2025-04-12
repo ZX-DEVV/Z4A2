@@ -1,0 +1,119 @@
+@import url('https://fonts.cdnfonts.com/css/devil-breeze');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-color: #1f2025;
+    background-image: url(mainbg.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+header{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 11px;
+    opacity: 0.6;
+}
+p{
+   font-size: 10px;
+    opacity: 0.5;
+    color: rgb(230, 230, 230);
+}
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    color: white;
+    
+}
+ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    transition: 0.3s ease-in;
+}
+a:hover{
+    transform: scale(1.5);
+    color: aquamarine;
+}
+
+.animede{
+    animation: fadeIn 4s ease-in-out ;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.sm{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+font-size: 10px;
+}
+button{
+    padding: 10px;
+    width: 140px;
+    height: 50px;
+    background-color:#1f2025;
+    border: none;
+    box-shadow: 4px 4px 10px rgb(94, 94, 94);
+    border-radius: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    
+}
+.cnt{
+    gap: 40px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+}
+.cnt1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}.cnt2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 4px 4px 8px black;
+    width: 500px;
+    padding: 5px;
+    border-radius: 10px;
+}
